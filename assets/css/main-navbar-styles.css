@@ -1,9 +1,6 @@
 ul li img {
   width: 30px;
 }
-.dropdown {
-  letter-spacing: 2px;
-}
 .dropdown .dropdown-menu {
     -webkit-transition: all;
     -moz-transition: all;
@@ -18,7 +15,7 @@ ul li img {
 .dropdown.open .dropdown-menu {
     max-height: 300px;
     opacity: 1;
-    width: 190px;
+    width: 285px;
 }
 .dropdown-header {
   padding: 5px 10px 2px 10px;
@@ -28,7 +25,6 @@ ul li img {
   padding: 3px 11px;
   color: #555555;
   font-size: 11px;
-  letter-spacing: 2px;
 }
 .dropdown-menu .divider {
   margin: 0;
@@ -37,7 +33,10 @@ ul li img {
   border-radius: 0;
 }
 .join-text {
-  margin-left: 8px;
+  margin-left: 0px;
+}
+.nav>li>a {
+  padding: 15px 12px;
 }
 .navbar {
   cursor: pointer;
@@ -52,10 +51,10 @@ ul li img {
   cursor: pointer;
 }
 .navbar-brand {
-  padding: 4px 15px;
+  padding: 10px 15px;
 }
 .navbar-brand img {
-  width: 195px;
+  width: 125px;
   border: none;
   margin: 0;
   padding: 0;
@@ -95,18 +94,15 @@ ul li img {
 #join:hover {
   color: #777777;
 }
-#tipue_search_content {
-  padding-top: 0;
-}
 @media only screen and (max-width: 1200px) {
   .join-text {
-    margin-left: 2px;
+    margin-left: 0px;
   }
   .nav > li > a {
     padding: 15px 5px;
   }
   .pull-right {
-    width: 165px;
+    width: 123px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -121,14 +117,17 @@ ul li img {
   .join-text {
     margin-left: 0;
   }
-  .navbar-brand {
-    padding: 10px 15px;
+  .nav > li > a {
+    padding: 15px 2px;
   }
-  .navbar-brand img {
-    width: 125px;
+  .navbar-brand {
+    padding: 10px 5px;
   }
   .navbar-form {
     width: 90px;
+  }
+  .navbar-nav {
+    letter-spacing: 1px;
   }
   .pull-right {
     width: 85px;
@@ -143,15 +142,21 @@ ul li img {
   }
 }
 @media only screen and (max-width: 767px) {
-  .navbar-brand {
-    padding: 4px 15px;
-  }
-  .navbar-brand img {
-    width: 195px;
+  .dropdown.open .dropdown-menu {
+      width: 100%;
   }
   .navbar-form {
     width: auto;
     margin: 0 15px 15px 15px;
+  }
+  .nav > li > a {
+    padding: 15px 10px;
+  }
+  .navbar-brand {
+    padding: 10px 15px;
+  }
+  .navbar-nav {
+    letter-spacing: 2px;
   }
   .pull-right {
     width: auto;
